@@ -7,7 +7,7 @@ angular.module('MyApp').directive('hljs', function($timeout, $q, $interpolate) {
     },
     link: function(scope, element, attr) {
 
-      scope.$watch('code', function() {
+      scope.$watchGroup(['code', 'lang'], function() {
       	update(scope.code || '');
       })
 
