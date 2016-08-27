@@ -1,0 +1,26 @@
+body, html {
+  background: #eee;
+}
+
+md-card {
+  will-change: transform;
+  animation: scaleUp 0.5s;
+
+  width: 100%;
+  max-width: 800px;
+
+  margin: 50px auto;
+}
+
+textarea {
+  font-size: 13px;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

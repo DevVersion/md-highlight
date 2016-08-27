@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Material Design Highlight</title>
+
+  <link rel="stylesheet" href="highlightjs-material.css">
+  <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css"></script>
+  <link rel="stylesheet" href="app.css">
+
+</head>
+<body ng-cloak ng-app="MyApp" ng-controller="AppCtrl" layout="row" layout-align="center start">
+  
+  <md-card>
+    <md-card-title>
+      <span>Angular Material Highlight</span>
+    </md-card-title>
+    <md-card-content>
+
+      <md-input-container class="md-block">
+        <label>Source Language</label>
+
+        <md-select ng-model="language">
+          <md-option value="html" selected>HTML</md-option>
+          <md-option value="js">JavaScript</md-option>
+        </md-select>
+
+      </md-input-container>
+
+      <br/>
+
+      <md-input-container class="md-block">
+
+        <label>Code</label>
+        <textarea ng-model="code" rows="15"></textarea>
+
+      </md-input-container>
+
+      <md-button ng-disabled="!code" class="md-raised md-primary" ng-click="copy()">Copy Rich Text Format</md-button>
+
+      <br/><br/>
+
+      <hljs ng-if="code" lang="language" code="code"></hljs>
+
+    </md-card-content>
+  </md-card>
+  
+</body>
+
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-aria.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-animate.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="highlight.pack.js"></script>
+<script type="text/javascript" src="highlight-angular.js"></script>
+
+</html>
