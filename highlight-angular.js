@@ -16,7 +16,7 @@ angular.module('MyApp').directive('hljs', function($timeout, $q, $interpolate) {
     		element.empty();
 
         var contentParent = angular.element(
-          '<table style="width: 100%; font-family: Roboto, Helvetica Neue, sans-serif">' + 
+          '<table style="width: 100%; font-family: Roboto, Helvetica Neue, sans-serif; line-height: 18.85px; font-size: 13px">' + 
           	'<tbody>' +
           		'<tr>' +
           			'<td style="border-left:solid #000000 1px;border-right:solid #000000 1px;border-bottom:solid #000000 1px;border-top:solid #000000 1px;vertical-align:top;background-color:#0c2238;padding:7px 7px 7px 7px"></td>' +
