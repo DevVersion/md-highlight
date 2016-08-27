@@ -12,6 +12,10 @@ md-card {
   margin: 50px auto;
 }
 
+hljs {
+  max-height: 500px;
+}
+
 textarea {
   font-size: 13px;
 }
