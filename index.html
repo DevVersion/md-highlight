@@ -21,7 +21,12 @@
 
         <md-select ng-model="language">
           <md-option value="html" selected>HTML</md-option>
-          <md-option value="js">JavaScript</md-option>
+          <md-option value="javascript">JavaScript</md-option>
+          <md-option value="typescript">TypeScript</md-option>
+
+          <md-option value="less">LESS</md-option>
+          <md-option value="scss">SCSS</md-option>
+          <md-option value="css">CSS</md-option>
         </md-select>
 
       </md-input-container>
@@ -31,7 +36,7 @@
       <md-input-container class="md-block">
 
         <label>Code</label>
-        <textarea ng-model="code" rows="15"></textarea>
+        <textarea md-no-autogrow ng-model="code" rows="15"></textarea>
 
       </md-input-container>
 
